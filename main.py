@@ -21,9 +21,9 @@ def find_mismatch(text):
             # Process closing bracket, write your code here
             if not opening_brackets_stack or not are_matching(opening_brackets_stack.pop().char,next):
                 return i+1 
-            if opening_brackets_stack: 
-                return opening_brackets_stack[0].position
-        return "Success" 
+    if opening_brackets_stack: 
+        return opening_brackets_stack[0].position
+    return "Success" 
     pass
 
 
